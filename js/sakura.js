@@ -11,10 +11,10 @@ function Sakura(x, y, s, r, fn) {
 }
 Sakura.prototype.draw = function (cxt) {
     cxt.save();
-    var xc = 40 * this.s / 4;
+    var xc = 10 * this.s / 1;
     cxt.translate(this.x, this.y);
     cxt.rotate(this.r);
-    cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
+    cxt.drawImage(img, 0, 0, 10 * this.s, 10 * this.s)
     cxt.restore();
 }
 Sakura.prototype.update = function () {
